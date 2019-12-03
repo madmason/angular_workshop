@@ -13,5 +13,3 @@
 - [rxjs-playground](https://rxjs-playground.github.io/#/)
 
 - [learnrxjs.io](https://www.learnrxjs.io/operators/)
-
-
