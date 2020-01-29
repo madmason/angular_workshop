@@ -13,15 +13,16 @@ Don’t forget to remove book-list from your app components template, otherwise 
 #### Book Routes:
 
 ```
-const routes: Routes = [{
-  path: 'books',
-  component: BookListComponent
-}]
+const routes: Routes = [
 {
   path: '',
   pathMatch: 'full',
   redirectTo: '/books'
-}
+},
+{
+  path: 'books',
+  component: BookListComponent
+}]
 ```
 
 #### Router outlet:
