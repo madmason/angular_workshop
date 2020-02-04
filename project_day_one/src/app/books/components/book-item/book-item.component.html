@@ -1,0 +1,6 @@
+<div *ngIf="book">
+  <p>{{ book | json }}</p>
+  <button (click)="sendBookTitle()">
+    Send Title
+  </button>
+</div>
