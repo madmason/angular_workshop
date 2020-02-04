@@ -13,3 +13,7 @@
 - [rxjs-playground](https://rxjs-playground.github.io/#/)
 
 - [learnrxjs.io](https://www.learnrxjs.io/operators/)
+
+## Projekt Status
+
+[Tag 1](https://github.com/martinakraus/angular_workshop/tree/master/project_day_one)
