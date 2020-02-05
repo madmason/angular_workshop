@@ -1,6 +1,6 @@
 # Load data from local API
 1. Start our HTTP-Server bookmonkey-api in your shell
-2. Import the HttpClientModule in your BooksModule.
+2. Import the HttpClientModule in your AppModule.
 3. Inject HttpClient via constructor(private http: HttpClient) in BookData
 4. Load data from local API in BookData service via http.get(URL)
 
