@@ -8,13 +8,19 @@
 ## Hints
 
 ```
-let subject = new Subject<string>();
+// Inside HeaderService
+subject = new Subject<string>();
 
+setHeader(title: string) {
+ this.subject.next(title);
+}
+
+
+// Inside HeaderComponent
 // We subscribe to the subject (inside the component)
-subject.subscribe((data) => {
+this.headerService.subject.subscribe((data) => {
  console.log(data)
 });
 
-
-subject.next('I am a title');
+this.headerService.setHeader('I am a title');
 ``` 
