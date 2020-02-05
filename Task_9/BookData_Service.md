@@ -1,4 +1,4 @@
-# Create a title @Input
+# Create a BookDataService
 1. Generate a `Book` interface for a single book in the folder books
 2. Generate a `BookData` service in the `books` folder that uses the `Book` interface
 3. Add a method `getBooks()` that returns an array of Books
