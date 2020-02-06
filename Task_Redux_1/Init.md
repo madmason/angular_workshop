@@ -1,19 +1,11 @@
 # Init project, Install @ngrx/store and devtools
 1. Install @ngrx/store
 
-* Installing with npm:
-
-	`npm install @ngrx/store --save`
-
 * Installing with ng add
 
 	`ng add @ngrx/store`
 
 2. Install DevTools
-
-* Installing with npm:
-
-	`npm install @ngrx/store-devtools --save`
 
 * Installing with ng add
 
