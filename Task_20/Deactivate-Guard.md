@@ -16,14 +16,6 @@ ng generate guard books/confirm-candeactivate
 - add interface to your class
 - implement canDeactivate() function
 
-```ts
-@NgModule({
-  providers: [
-    ConfirmCandeactivateGuard
-  ]
-})
-```
-
 ```js
 return confirm('Are you sure?');
 ```
