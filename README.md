@@ -2,7 +2,7 @@
 
 ## Material
 
-- [Workshop-Slides](https://bit.ly/2sCqPCB)
+- [Workshop-Slides](http://bit.ly/typescript-ws)
 
 - [Angular Checklist](https://angular-checklist.io/default/checklist/architecture)
 
@@ -14,6 +14,4 @@
 
 - [learnrxjs.io](https://www.learnrxjs.io/operators/)
 
-## Projekt Status
 
-[Tag 1](https://github.com/martinakraus/angular_workshop/tree/master/project_day_one)
