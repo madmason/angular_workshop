@@ -2,7 +2,7 @@
 
 ## Material
 
-- [Workshop-Slides](http://bit.ly/typescript-ws)
+- [Workshop-Slides](https://bit.ly/2sCqPCB)
 
 - [Angular Checklist](https://angular-checklist.io/default/checklist/architecture)
 
