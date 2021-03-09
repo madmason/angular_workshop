@@ -1,7 +1,0 @@
-<div *ngIf="book">
-  <h1>{{ book.title }}</h1>
-  <h6>{{ book.author }}</h6>
-  <button (click)="sendBookTitle()">Send Title</button>
-  <button (click)="changeHeader()" >Change Header</button>
-  <button [routerLink]="book.isbn">Show Details</button>
-</div>

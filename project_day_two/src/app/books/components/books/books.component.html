@@ -1,8 +1,0 @@
-<div *ngIf="(books$ | async) as books">
-  <app-book-item *ngFor="let book of books; trackBy: trackById"
-                 [book]="book"
-                 (sendTitle)="sendTitleEventHandler($event)"
-  >
-  </app-book-item>
-</div>
-
