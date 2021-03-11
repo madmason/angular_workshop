@@ -14,4 +14,4 @@ setHeader(headerTitle: string) {
 ```
 
 ```
-<h1>(headerTitle$ | async)</h1>
+<h1>{{ headerTitle$ | async }}</h1>
