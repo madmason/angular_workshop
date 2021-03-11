@@ -10,7 +10,7 @@
 ```
 // app-routing.module.ts
 const routes: Routes = [
-  {path: '', redirectTo: '/books', pathMatch: 'full'},
+  {path: '', redirectTo: '/about', pathMatch: 'full'},
   {path: 'books', loadChildren: () => import('./books/books.module').then(m => m.BooksModule)}
 ];
 ```
