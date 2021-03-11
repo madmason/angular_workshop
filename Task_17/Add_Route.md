@@ -17,11 +17,11 @@ const routes: Routes = [
 {
   path: '',
   pathMatch: 'full',
-  redirectTo: '/books'
+  redirectTo: '/about'
 },
 {
-  path: 'books',
-  component: BookListComponent
+  path: 'about',
+  component: AboutComponent
 }]
 ```
 
