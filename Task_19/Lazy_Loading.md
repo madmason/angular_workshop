@@ -20,6 +20,5 @@ const routes: Routes = [
 const routes: Routes = [{
   path: '',
   component: BooksComponent,
-  children: [{ ... }]
-}];
+}, ...];
 ```
