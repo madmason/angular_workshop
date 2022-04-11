@@ -12,8 +12,9 @@ ng g interface books/book
 ng generate service books/book-api
 ```
 
-
+```
 // book.component.ts
 constructor(private bookData: BookApiService){}
 ```
+
 [Solution](https://stackblitz.com/github/workshops-de/angular-workshop/tree/solve--create-a-BookApi-service)
