@@ -16,7 +16,7 @@ Now, it is time to feed our component with data using an `@Input`-Binding.
 ```ts
 // app.component.ts
 export class AppComponent {
-  book = {
+  book: Book = {
     title: 'How to win friends',
     author: 'Dale Carnegie',
     abstract: 'In this book ...'
