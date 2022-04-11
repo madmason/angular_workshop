@@ -1,16 +1,35 @@
-# Add a (titleClicked) @Output
-1. Add a `titleClicked` event to your component
-2. Add an EventBinding for Title (Example: `<h3 (click)="sendPing()">{{ title }}</h3>`)
-3. React to the `titleClicked` Event with a `console.log` in the app component.
+# Apply an Output-Binding
+It is time to allow our component to communicate with other components.
+
+- Open _src/app/book-card/book-card.component.ts_
+- Initialize a property `detailClick` with an `EventEmitter`.
+- Type the `EventEmitter` to accept a `Book` as event payload.
+- Annotate `detailClick` with the `@Output` decorator.
+	- Make sure `@Output` & `EventEmitter` are imported from `@angular/core`.
+- Emit the `detailClick`-Event within `handleDetailClick`.
+- Switch to _src/app/app.component.html_
+- Bind to the `detailClick`-Event of _<app-book-card>_ to a method `goToBookDetails($event)`
+- Implement `goToBookDetails($event)` by logging book passed by _<app-book-card>_
 
 ## Hints
+```ts
+// src/app/book-card/book-card.component.ts
 
-`@Output() titleClicked = new EventEmitter<string>();`
+// Output-Binding
+@Output() detailClick = new EventEmitter<Book>();
 
-`<title-box (titleClicked)="fn($event)"></title-box>`
+// Emit an event
+this.detailClick.emit(this.content);
+```
 
-`titleClicked.emit('EventData')`
+```ts
+// src/app/app.component.ts
 
-You need 2 event handlers.
+// handling detailClick-Event
+goToBookDetails(book: Book) {
+  console.log('Navigate to book details, soon...');
+  console.table(book);
+}
+```
 
-[Solution](https://stackblitz.com/github/angularjs-de/angular-workshop/tree/Add-a-titleClicked-@Output)
+[Solution](https://stackblitz.com/github/workshops-de/angular-workshop/tree/solve--apply-an-output-binding)
