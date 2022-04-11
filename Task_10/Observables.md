@@ -1,19 +1,25 @@
 # Create an observable
-1. The `getBooks()` method should use `of()`
-2. Subscribe to it in the BookList component
+- Open _book-api.service.ts_
+- Change the API of `getAll` returning `Observable<Book[]>` instead of `Book[]`.
+- Make use of the creation operator `of`.
+- Consume the Observable in the component.
+- Make sure that the books are still rendered.
 
 ## Hints
+**imports**
+```typescript
+import { Observable, of } from 'rxjs';
+```
 
-#### imports
+**getAll()**
+```typescript
+return of(this.books);
+```
 
-`import { Observable, of } from 'rxjs';`
+**Component**
+```typescript
+...getAll().subscribe(booksFromApi => /* assign to books */)
+```
 
-#### getBooks()
 
-`return of(this.books);`
-
-#### Component
-
-`.subscribe(successFn)`
-
-[Solution](https://stackblitz.com/github/angularjs-de/angular-workshop/tree/Create-an-observable)
+[Solution](https://stackblitz.com/github/workshops-de/angular-workshop/tree/solve--create-an-observable)
