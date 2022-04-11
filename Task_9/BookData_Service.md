@@ -1,4 +1,4 @@
-# Create a BookDataService
+# Create a BookApiService
 1. Generate a `BookApi` service in the `books` folder that uses the `Book` interface
 2. Add a method `getAll()` that returns an array of Books
 3. Load the data from the `BookApi` service through the DI into `Book` component
