@@ -23,3 +23,5 @@ Therefore we introduce a new NgModule.
 > *Often the import-Statements are updated automatically by your editor, but sometimes the end result is not perfect. If you experience that your app does not compile, check & correct the import-Statements.*
 - *If it still not works, reboot the Angular CLI.*
 - *If it still not works, consult your trainer.*
+
+[Solution](https://stackblitz.com/github/workshops-de/angular-workshop/tree/solve--create-a-BookModule)
