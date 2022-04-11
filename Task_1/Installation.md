@@ -30,9 +30,9 @@ Please install the following tools:
 Please run the following commands in the terminal:
 ```
 $ node -v 
-# => v8.0.0 (or higher)
+# => v14.0.0 (or higher)
 $ npm -v
-# => 6.0.0 (or higher)
+# => 7.0.0 (or higher)
 $ ng --help
 # => output of the angular-cli help
 ```
