@@ -1,18 +1,14 @@
 # Use *ngFor
-1. Create a `BookList` component with ng(-cli)
-2. Use the new component in the `AppComponent` view
-3. Create an array with sample books in your `BookList` component
-4. Iterate over books with `*ngFor`
+1. Create an array with sample books in your `AppComponent` component
+2. Iterate over books with `*ngFor`
 
 ## Hints
-
-`ng generate component books/book-list --export`
 
 `*ngFor="let book of books"`
 
 ```
 …
-books = [
+books: Book[] = [
   {
     "title": "Design Patterns",
     "subtitle": "Elements of Reusable Object-Oriented Software"
