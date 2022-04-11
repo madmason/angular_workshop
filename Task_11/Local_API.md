@@ -1,20 +1,37 @@
 # Load data from local API
-1. Start our HTTP-Server bookmonkey-api in your shell
-2. Import the HttpClientModule in your AppModule.
-3. Inject HttpClient via constructor(private http: HttpClient) in BookData
-4. Load data from local API in BookData service via http.get(URL)
+- Start our HTTP-Server `bookmonkey-api` in your shell.
+- Import the `HttpClientModule` in your `AppModule` and add it to the _imports_-Collection.
+- Inject `HttpClient` via `constructor(private http: HttpClient)` in `BookApiService`
+- Load data from local API in `BookApiService` service via `http.get(URL)`
 
 ## Hints
-
-`import {HttpClientModule} from "@angular/common/http";`
-
+### API starten
+If not already installed
+```bash
+# console session
+npm i -g bookmonkey-api
+bookmonkey-api
+# OR
+npx bookmonkey-api
 ```
-import {HttpClient} from '@angular/common/http';
-import {Observable} from 'rxjs';
+
+```typescript
+import { HttpClientModule } from '@angular/common/http';
 ```
 
-`return this.http.get<Book[]>('http://localhost:4730/books')`
+```typescript
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+```
 
-`this.bookDataService.getBooks().subscribe(successFn);`
+```typescript
+return this.http.get<Book[]>('http://localhost:4730/books')
+```
 
-[Solution](https://stackblitz.com/github/angularjs-de/angular-workshop/tree/Load-data-from-local-API)
+```typescript
+this.bookApiService.getBooks().subscribe(successFn);
+```
+
+
+
+[Solution](https://stackblitz.com/github/workshops-de/angular-workshop/tree/solve--load-data-from-local-api)
