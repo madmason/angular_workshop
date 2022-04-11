@@ -1,7 +1,9 @@
 # Create a BookApiService
-1. Generate a `BookApi` service in the `books` folder that uses the `Book` interface
-2. Add a method `getAll()` that returns an array of Books
-3. Load the data from the `BookApi` service through the DI into `Book` component
+- Create a service handling Book-API operations 
+- Execute the following Angular CLI command: `ng generate service book/book-api`.
+- Implement the method `getAll()` that yields an array of Books.
+- Inject `BookApiService` into the _BookComponent_.
+- Get rid of the example books of _BookComponent_ by using the `BookApiService`
 
 ## Hints
 
