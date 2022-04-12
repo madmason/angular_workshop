@@ -18,7 +18,7 @@ return of(this.books);
 
 **Component**
 ```typescript
-...getAll().subscribe(booksFromApi => /* assign to books */)
+this.bookApiService.getAll().subscribe(booksFromApi => /* assign to books */)
 ```
 
 
