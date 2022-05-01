@@ -2,13 +2,10 @@
 Create new project with angular-cli:
 
 ```
-ng new PROJECT_NAME
+ng new PROJECT_NAME --routing --style scss
 ```
 
-The CLI will ask you the following questions:
-
-- Would you like to add Angular routing? Yes
-- Which stylesheet format would you like to use? SCSS
+The last two options will create a module for routing and set .scss as stylesheet format (see https://angular.io/cli/new).
 
 Go into project directory:
 ```
